@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[PRODUCT IMAGE] devería devolver el producto con la imagen asignada 1`] = `
+<div
+  className="productCard undefined"
+>
+  <img
+    alt="Coffe Mug"
+    className="productImg undefined"
+    src="./coffee-mug.png"
+  />
+</div>
+`;
+
+exports[`[PRODUCT IMAGE] devería devolver el producto con la imagen por default 1`] = `
+<img
+  alt="Coffe Mug"
+  className="productImg undefined"
+  src="https://hola.jpg"
+/>
+`;

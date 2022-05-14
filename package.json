@@ -7,6 +7,11 @@
         "dist",
         "src"
     ],
+    "repository": {
+        "url": "https://github.com/juanfalconcodigo/jf-product-card",
+        "type": "git"
+    },
+    "homepage": "https://juanfalcon.vercel.app/",
     "engines": {
         "node": ">=10"
     },
@@ -14,6 +19,7 @@
         "start": "tsdx watch",
         "build": "tsdx build",
         "test": "tsdx test --passWithNoTests",
+        "test:watch": "tsdx test --watch",
         "lint": "tsdx lint",
         "prepare": "tsdx build",
         "size": "size-limit",
@@ -36,8 +42,7 @@
     "name": "jf-product-card",
     "author": "JUAN FALCON",
     "module": "dist/jf-product-card.esm.js",
-    "size-limit": [
-        {
+    "size-limit": [{
             "path": "dist/jf-product-card.cjs.production.min.js",
             "limit": "10 KB"
         },
@@ -47,11 +52,19 @@
         }
     ],
     "devDependencies": {
+        "@babel/preset-env": "^7.17.10",
+        "@babel/preset-react": "^7.16.7",
+        "babel-jest": "^28.1.0",
+        "jest": "^25.5.4",
+        "react-test-renderer": "^18.1.0",
+        "@types/react-test-renderer": "^18.0.0",
         "@rollup/plugin-image": "^2.1.1",
         "@size-limit/preset-small-lib": "^7.0.8",
         "@types/react": "^18.0.9",
-        "@types/react-dom": "^18.0.3",
+        "@types/react-dom": "^18.0.4",
         "husky": "^8.0.1",
+        "identity-obj-proxy": "^3.0.0",
+        "jest-transform-stub": "^2.0.0",
         "react": "^18.1.0",
         "react-dom": "^18.1.0",
         "rollup-plugin-postcss": "^4.0.2",
@@ -59,5 +72,20 @@
         "tsdx": "^0.14.1",
         "tslib": "^2.4.0",
         "typescript": "^3.9.10"
+    },
+    "keywords": [
+        "product",
+        "card",
+        "juan",
+        "falcon"
+    ],
+    "dependencies": {
+
+    },
+    "jest": {
+        "moduleNameMapper": {
+            "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "jest-transform-stub",
+            "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+        }
     }
 }

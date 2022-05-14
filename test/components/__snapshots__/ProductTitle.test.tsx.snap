@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[PRODUCT TITLE] Componente con la clase personalizada 1`] = `
+<span
+  className="productDescription class-dummy"
+>
+  test
+</span>
+`;
+
+exports[`[PRODUCT TITLE] devería de mostrar el nombre del producto 1`] = `
+<div
+  className="productCard undefined"
+>
+  <span
+    className="productDescription undefined"
+  >
+    Product 1
+  </span>
+</div>
+`;
